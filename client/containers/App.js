@@ -7,6 +7,7 @@ import { getCurrentUser, noToken } from '../actions'
 
 
 import HomePage from '../components/HomePage';
+import UserForm from '../components/AddImage';
 
 class App extends Component {
   state = { 
@@ -27,6 +28,7 @@ class App extends Component {
     return (
       <div>
         <Route exact path="/" component={HomePage} />
+        <Route path="/users/add" component={UserForm} /> 
       </div>
     );
   }
