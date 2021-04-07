@@ -4,8 +4,6 @@ import { Route } from 'react-router-dom';
 import '../scss/index.scss';
 import { getCurrentUser, noToken } from '../actions'
 
-
-
 import HomePage from '../components/HomePage';
 import UserForm from '../components/AddImage';
 

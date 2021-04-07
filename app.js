@@ -30,7 +30,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/dist/bundle', expressStaticGzip(path.join(__dirname, 'dist/bundle'), {
+app.use('/bundle', expressStaticGzip(path.join(__dirname, 'dist/bundle'), {
   enableBrotli: true,
   orderPreference: ['br', 'gz'],
   setHeaders: function (res, path) {
